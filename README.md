@@ -2,6 +2,10 @@
 
 A macOS menu bar-only app that lets you search Polymarket markets and view live moneyline, a price chart, and the live order book for the selected market.
 
+## Demo
+
+![Demo](demo.png)
+
 ## Requirements
 
 - macOS 13+ (uses `MenuBarExtra`)
@@ -38,7 +42,3 @@ open Package.swift
 
 - Order book and live price are shown for the **Yes** token of the selected market.
 - This app is read-only and does not place orders.
-
-## Demo
-
-![Demo](demo.png)
