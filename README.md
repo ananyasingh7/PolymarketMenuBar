@@ -4,7 +4,7 @@ A macOS menu bar-only app that lets you search Polymarket markets and view live 
 
 ## Demo
 
-![Demo](demo.png)
+![Demo](example.png)
 
 ## Requirements
 
