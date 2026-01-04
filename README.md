@@ -38,3 +38,7 @@ open Package.swift
 
 - Order book and live price are shown for the **Yes** token of the selected market.
 - This app is read-only and does not place orders.
+
+## Demo
+
+![Demo](demo.png)

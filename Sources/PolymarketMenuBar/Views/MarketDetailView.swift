@@ -21,7 +21,11 @@ struct MarketDetailView: View {
 
     private var livePrice: Double? {
         if let bestBid = displayedBook.bids.first?.price, let bestAsk = displayedBook.asks.first?.price {
-            return (bestBid + bestAsk) / 2
+            if bestAsk >= bestBid {
+                return (bestBid + bestAsk) / 2
+            }
+            // Some markets stream inverted asks (complementary price). Avoid mid-price in that case.
+            return bestBid
         }
         if let trade = socket.lastTradePrice ?? lastTradeFallback {
             return trade
